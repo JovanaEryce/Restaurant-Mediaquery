@@ -1,7 +1,7 @@
 body {
     width: 100%;
     height: 100%;
-    margin: 0 auto;
+    margin: 0;
     background: url(../img/homepage-3.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -37,8 +37,8 @@ header {
         flex-wrap: wrap;
         align-content: flex-start;
         align-items: flex-start;
-        padding-left: 4rem;
-        padding-right: 4rem;
+        //padding-left: 4rem;
+        //padding-right: 4rem;
         }
 
     .header__top--list {
@@ -52,10 +52,11 @@ header {
             justify-content: space-between;
             align-content: flex-start;
             align-items: flex-start;
+            padding-left: 0;
             li {
                 list-style: none;
                 color: white;
-                padding-right: 2rem;
+                //padding-right: 2rem;
             }
         }
     }
@@ -71,10 +72,11 @@ header {
             justify-content: space-between;
             align-content: flex-start;
             align-items: flex-start;
+            padding-left: 0;
             li {
                 list-style: none;
                 color: white;
-                padding-right: 2rem;
+                //padding-right: 2rem;
             }
         }
     }
@@ -91,20 +93,21 @@ header {
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: flex-start;
-        padding-left: 4rem;
-        padding-right: 4rem;
+        //padding-left: 4rem;
+        //padding-right: 4rem;
 
         ul {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-content: flex-start;
-            align-items: flex-start;
+            align-items: baseline;
 
             li {
                 list-style: none;
                 color: white;
-                padding-right: 2rem;
+                //padding-right: 2rem;
+                margin-right: 1rem;
             }
         }
     }
@@ -121,6 +124,7 @@ header {
         align-self: auto;
 
         ul {
+            padding-left:0;
             li{
                 a {
                     color: white;
@@ -206,22 +210,7 @@ header {
             }
         }
     }
-    .second__wrapper {
-        order: 0;
-        flex: 1;
-        background-color: transparent;
-        border-width: 0px;
-        border-style: solid solid solid solid;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-        background-image: url(http://restaurant.gamba-themes.com/wp-content/uploads/2016/09/special-menu-1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center center;
-    }
+
     /*About us*/
 
     .about__section {
@@ -251,13 +240,14 @@ header {
         display: flex;
         flex-direction: column;
         background: white;
+        padding-top:5rem;
+        padding-bottom:5rem;
 
         .about__title {
             text-align: center;
             background: url("../img/crawfish.png");
             background-repeat: no-repeat;
             background-position: center;
-            padding: 5rem;
 
             h2 {
                 text-transform: uppercase;
@@ -428,13 +418,14 @@ header {
         display: flex;
         flex-direction: column;
         background: white;
+        padding-top:5rem;
+        padding-bottom:5rem;
 
         .menu__title {
             text-align: center;
             background: url("../img/kingcrab.png");
             background-repeat: no-repeat;
             background-position: center;
-            padding: 5rem;
 
             h2 {
                 text-transform: uppercase;
@@ -894,7 +885,7 @@ ul.breadcrumbs {
   }
   
   .select__input {
-    padding-right: 8.5rem;
+    padding-right: 8.4rem;
     background: transparent;
     color: grey;
     border-color: grey;
@@ -940,7 +931,6 @@ ul.breadcrumbs {
         order: 0;
         flex: 1;
         align-self: auto;
-        padding: 5rem;
 
         .opening__wrapper {
             background: url("../img/coming-soon-1.jpg");
@@ -1103,7 +1093,7 @@ ul.breadcrumbs {
 
     .small__banner--text {
         color: #fff;
-        padding: 4rem;
+        padding-top: 4rem;
         h4 {
             margin: 0;
         }
@@ -1111,7 +1101,7 @@ ul.breadcrumbs {
     .small__banner--form {
         display: flex;
         justify-content: space-between;
-        padding: 5rem;
+        padding-top: 5rem;
 
         input {
             background: transparent;
@@ -1138,7 +1128,7 @@ ul.breadcrumbs {
         justify-content: center;
         align-content: center;
         align-items: baseline;
-        padding: 4rem;
+        padding-bottom: 4rem;
         flex-wrap: wrap;
         z-index: 0;
         position: fixed;
@@ -1216,17 +1206,21 @@ ul.breadcrumbs {
 
     .header__top  {
         flex-wrap: nowrap;
-        justify-content: space-around;
+        justify-content: space-between;
         .header__top--list {
             ul {
-                display: inherit;
+                display: flex;
+
+                li {
+                    padding-right: 1rem;
+                }
             }
         }
     }
 
     .header__bottom {
         flex-wrap: nowrap;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         
         ul {
@@ -1271,7 +1265,6 @@ ul.breadcrumbs {
 
         .small__banner--form {
             padding-top: 0;
-            padding-left: 4rem;
 
             form {
                 width: 100%;
@@ -1296,7 +1289,7 @@ ul.breadcrumbs {
    @media (max-width: 768px) {
         .header__top  {
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between;
             .header__top--list {
                 ul {
                     display: inherit;
@@ -1310,14 +1303,14 @@ ul.breadcrumbs {
             
             ul {
                 align-items: center;
-                padding-left: 2rem;
+               //padding-left: 2rem;
     
                 li {
-                    padding-right: .5rem;
+                    //padding-right: .5rem;
                 }
     
                 .icon__shop {
-                    padding-left: 1rem;
+                    //padding-left: 1rem;
                     padding-right: 0
                 }
             }
@@ -1352,6 +1345,11 @@ ul.breadcrumbs {
         .news__wrapp {
             display: -webkit-box;
         }
+
+        .news__menu--list {
+            display:none;
+        }
+
         .input-date {
             padding-left: 1.5rem;
         }
@@ -1366,18 +1364,19 @@ ul.breadcrumbs {
     
         .upcoming__section {
             flex-direction: column;
+
+            .upcoming__content {
+                padding-top: 5rem;
+            }
         }
     
         .small__banner {
             flex-direction: column;
             justify-content: space-between;
-            .small__banner--text {
-                padding-bottom: 2rem;
-            }
-    
+            padding-bottom: 2rem;
+
             .small__banner--form {
                 padding-top: 0;
-                padding-left: 4rem;
     
                 form {
                     width: 100%;
@@ -1398,23 +1397,104 @@ ul.breadcrumbs {
         
       }    
 
-   /* @media (max-width: 400px) {
+   @media (max-width: 400px) {
         .header__top  {
-            justify-content:center;
+            flex-direction: column;
+            align-items: center;
     
         .header__top--list {
-            justify-content:center;
+            flex-direction: column;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
     
     .header__bottom {
         justify-content: center;
     }
-    }
-}*/
 
-/*@media all and (max-width: 1690px) { ...}
-@media all and (max-width: 1280px) { ...}
-@media all and (max-width: 980px) { ... }
-@media all and (max-width: 736px) { ... }
-@media all and (max-width: 480px) {...}*/
+    .slider__section {
+        text-align: center;
+        padding-top: 0;
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: .5rem;
+            }
+    }
+
+    .slider {
+        padding-top: 0;
+    }
+
+    .slider__buttons {
+        display: flex;
+        flex-direction: column;
+
+         a.red__button {
+            margin-right: 0;
+            margin-bottom: 1rem;
+            border: 6px solid red;
+        }
+    }
+    .about__content {
+        padding-top: 3rem;
+        padding-bottom: 0;
+    }
+
+    .special__section {
+        padding-top: 0;
+    }
+
+    .boxes {
+        margin-right: 2rem;
+        margin-left: 2rem;
+
+        .special__title {
+            h2 {
+                font-size: 1.5rem;
+            }
+         }
+    }
+
+    .menu__content {
+        padding-top: 2rem;
+
+        .menu__title {
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .red__banner {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: .5rem;
+        }
+    }
+    .news__wrapp {
+        display:flex;
+
+        .news__menu--list {
+            display: none;
+        }
+    }
+    footer {
+        display:none;
+    }
+    }
+
+
+
