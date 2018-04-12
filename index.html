@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restaurant Flexbox</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="header__top">
+            <div class="header__top--list">
+                <ul>
+                    <li>79 District 1, HCM City, Vietnam</li>
+                    <li> (+84) 123 456 789</li>
+                    <li>07:30 am - 11:00 pm</li>
+                </ul>
+            </div>
+            <div class="header__top--social">
+                <ul>
+                        
+                    <li><i class="fab fa-facebook-f" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Facebook" title="Facebook"></i></li>
+                    <li><i class="fab fa-twitter" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Twitter" title="Twitter"></i></li>
+                    <li><i class="fab fa-pinterest-p" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Pinterest"></i></li>
+                    <li><i class="fab fa-youtube" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Youtube"></i></li>
+                    <li><i class="fab fa-instagram" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Instagram"></i></li>
+                  </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="header__bottom">
+            <div class="header__bottom--brand">
+                <img src="img/gamba.png" alt="Gamba restaurant"/>
+            </div>
+            <div class="header__bottom--menu">
+                <ul class="dropdown menu">
+                    <li class="has-submenu is-active">
+                      <a href="#0">Home</a>
+                    </li>
+                    <li class="has-submenu">
+                      <a href="#0">Pages</a>
+                    </li>
+                    <li>
+                      <a href="#" class="a__content">Reservation</a>
+                    </li>
+                    <li>
+                      <a href="#">Menu</a>
+                    </li>
+                     <li>
+                      <a href="#">Shop</a>
+                    </li>
+                    <li>
+                      <a href="#">Blog</a>
+                    </li>
+                    <li><a href="#" class="a__content">Contact</a></li>
+                    <ul class="icon__shop" style="border-left:1px solid grey;">
+                        <li class="border__li"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                    </ul>
+                  </ul>
+            </div>
+        </div>
+    </header>
+    <section class="slider__section">
+       <div class="slider">
+           <h1>WELCOME TO GAMBA RESTAURANT</h1>
+           <p>The Seafood Restaurant has been voted by locals as "Best in the area" year after year.<br> We actively seek out the freshest in 
+                regional seafood and produce our restaurant.</p>
+            <div class="slider__buttons">
+                <a href="#" type="button" class="red__button">Resever now</a>
+                <a href="#" type="button" class="white__button">Purchase now</a>
+            </div>   
+       </div>
+    </section>
+    <!--End Slider-->
+
+    <!--About us-->
+    <section class="about__section">
+            <div class="about__img">
+               <!-- <img src="/img/banner-1.jpg">-->
+            </div>
+            <div class="about__content">
+                <div class="about__title">
+                    <h2>About us</h2>
+                </div>
+                <div class="about__text">
+                    <p>Gamba Restaurant, a beacon of good Straits cooking, continues to draw people from all over town to NW6. The upmarket dining room, decked out with patterned banquettes, wooden flooring and crisp white linen, displays few hints of the restaurant’s oriental bent...
+                    </p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque la udan tium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. Excepteur cat cupidatat non proident, sunt in culpa qui officia deserunt sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorque.
+                    </p>
+                    <p class="signature">CEO - WILIAM GAMBA</p>
+                </div>
+            </div>
+    </section>
+    <!--End About us-->
+
+    <!--Special menu-->
+    <section class="special__section">
+            <div class="boxes">
+                <div class="special__title">
+                    <h2>Special menu</h2>
+                </div>
+                <div class="menu__boxes">
+                        <div class="box">
+                            <div class="box__wrapper">
+                                <div class="box__title">
+                                    <h4>Crawfish Dishs</h4>
+                                </div>
+                                <div class="box__img">
+                                    <img src="img/crawfish.png">
+                                </div>
+                                <div class="box__star"></div>
+                                <div class="box__price">
+                                    <span style="display:flex;justify-content: center;">
+                                        <h5>
+                                            <sup>$</sup>58
+                                        </h5>
+                                        <span class="per__kg">
+                                            <h6>/ kg</h6>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="box__button">
+                                    <a href="#" class="button">Full dishes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box__wrapper">
+                                <div class="box__title">
+                                    <h4>Crawfish Dishs</h4>
+                                </div>
+                                <div class="box__img">
+                                    <img src="img/kingcrab.png">
+                                </div>
+                                <div class="box__star"></div>
+                                <div class="box__price">
+                                    <span style="display:flex;justify-content: center;">
+                                        <h5>
+                                            <sup>$</sup>58
+                                        </h5>
+                                        <span class="per__kg">
+                                            <h6>/ kg</h6>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="box__button">
+                                    <a href="#" class="button">Full dishes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box__wrapper">
+                                <div class="box__title">
+                                    <h4>Crawfish Dishs</h4>
+                                </div>
+                                <div class="box__img">
+                                    <img src="img/clamp.png">
+                                </div>
+                                <div class="box__star"></div>
+                                <div class="box__price">
+                                    <span style="display:flex;justify-content: center;">
+                                        <h5>
+                                            <sup>$</sup>
+                                            58
+                                        </h5>
+                                        <span class="per__kg">
+                                            <h6>/ kg</h6>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="box__button">
+                                    <a href="#" class="button">Full dishes</a>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+        </section>
+        <!--End Special Menu-->
+
+        <!--Menu of the day-->
+        <section class="menu__section">
+            <div class="menu__img"></div>
+            <div class="menu__content">
+                <div class="menu__title">
+                    <h2>Menu of the day</h2>
+                </div>
+                <div class="menu__tabs">
+  
+                        <input class="state" type="radio" title="tab-one" name="tabs-state" id="tab-one" checked />
+                        <input class="state" type="radio" title="tab-two" name="tabs-state" id="tab-two" />
+                        <input class="state" type="radio" title="tab-three" name="tabs-state" id="tab-three" />
+                        <input class="state" type="radio" title="tab-four" name="tabs-state" id="tab-four" />
+                    
+                        <div class="tabs flex-tabs">
+                            <label for="tab-one" id="tab-one-label" class="tab"><i class="fas fa-birthday-cake"></i>Deserts</label>
+                            <label for="tab-two" id="tab-two-label" class="tab"><i class="fas fa-lemon"></i>Disher</label>
+                            <label for="tab-three" id="tab-three-label" class="tab"><i class="fas fa-glass-martini"></i>Drinks</label>
+                            <label for="tab-four" id="tab-four-label" class="tab"  style="border:none;"><i class="fas fa-utensils"></i>Starters</label>
+                    
+                    
+                            <div id="tab-one-panel" class="panel active">
+                                <div class="tabs__wrapper1">
+                                    <div class="tabs__content">
+                                        <div class="tabs__title">
+                                            <h4>Seafood Spaghetti</h4>
+                                            <span><sup>$</sup> 49</span>
+                                        </div> 
+                                        <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <div class="tabs__title">
+                                            <h4>Salmon Wraps Cheese</h4>
+                                            <span><sup>$</sup> 49</span>
+                                        </div> 
+                                        <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                    </div>
+                                </div>
+                                <div class="tabs__wrapper2">
+                                        <div class="tabs__content">
+                                            <div class="tabs__title">
+                                                <h4>Seafood Ramen</h4>
+                                                <span><sup>$</sup> 49</span>
+                                            </div> 
+                                            <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                        </div>
+                                        <div class="tabs__content">
+                                            <div class="tabs__title">
+                                                <h4>Salmon Or Hake Fillet</h4>
+                                                <span><sup>$</sup> 49</span>
+                                            </div> 
+                                            <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                        </div>
+                                    </div>  
+                            </div>
+                            <div id="tab-two-panel" class="panel">
+                                <div class="tabs__wrapper1">
+                                    <div class="tabs__content">
+                                        <div class="tabs__title">
+                                            <h4>Tequila & Lime Hake</h4>
+                                            <span><sup>$</sup> 49</span>
+                                        </div> 
+                                            <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <div class="tabs__title">
+                                            <h4>Madeira Herrings</h4>
+                                            <span><sup>$</sup> 49</span>
+                                        </div> 
+                                        <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                    </div>
+                                </div>
+                                <div class="tabs__wrapper2">
+                                    <div class="tabs__content">
+                                        <div class="tabs__title">
+                                            <h4>Scottish Rope-Grown Mussels</h4>
+                                            <span><sup>$</sup> 49</span>
+                                        </div> 
+                                        <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <div class="tabs__title">
+                                            <h4>Fish And Chips</h4>
+                                            <span><sup>$</sup> 49</span>
+                                        </div> 
+                                        <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div id="tab-three-panel" class="panel">
+                                <div class="tabs__wrapper1">
+                                    <div class="tabs__content">
+                                        <div class="tabs__title">
+                                            <h4>Salt And Pepper Squid</h4>
+                                            <span><sup>$</sup> 49</span>
+                                        </div> 
+                                        <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <div class="tabs__title">
+                                            <h4>Langoustine & Salmon Ravioli</h4>
+                                            <span><sup>$</sup> 49</span>
+                                        </div> 
+                                        <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                    </div>
+                                </div>
+                                <div class="tabs__wrapper2">
+                                    <div class="tabs__content">
+                                        <div class="tabs__title">
+                                            <h4>King Prawn Spaghetti</h4>
+                                            <span><sup>$</sup> 49</span>
+                                        </div> 
+                                        <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <div class="tabs__title">
+                                            <h4>Tequila & Lime Oysters</h4>
+                                            <span><sup>$</sup> 49</span>
+                                        </div> 
+                                        <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div id="tab-four-panel" class="panel">
+                                <div class="tabs__wrapper1">
+                                    <div class="tabs__content">
+                                        <div class="tabs__title">
+                                            <h4>Lobster ‘Mac & Cheese’</h4>
+                                            <span><sup>$</sup> 49</span>
+                                        </div> 
+                                        <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <div class="tabs__title">
+                                            <h4>Kung Pao Pastrami</h4>
+                                            <span><sup>$</sup> 49</span>
+                                        </div> 
+                                        <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                    </div>
+                                </div>
+                                <div class="tabs__wrapper2">
+                                    <div class="tabs__content">
+                                        <div class="tabs__title">
+                                            <h4>Lobster Surf And Turf</h4>
+                                            <span><sup>$</sup> 49</span>
+                                        </div> 
+                                        <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <div class="tabs__title">
+                                            <h4>Buffet & Kimchi Salad</h4>
+                                            <span><sup>$</sup> 49</span>
+                                        </div> 
+                                        <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--End Meny of the day-->
+
+        <!--Section Red Banner-->
+        <section class="red__banner">
+            <h2>ENJOY SEAFOOD RESTAURANT TEMPLATE!</h2>
+            <p>The Seafood Restaurant has been voted by locals as "Best in the area" year after year. We actively seek out <br> the freshest in regional seafood and produce our restaurant is expanding.</p>
+            <div class="red__button">
+                <a href="#" class="button">Purchase Now</a>
+            </div> 
+        </section>
+        <!--End Red Banner-->
+
+        <!--News Of The Day-->
+        <section class="news__day">
+            <div class="news__title">
+                <h2>News of the day</h2>
+            </div>
+            <div class="news__wrapp">
+                <!--First- left wrap-->
+                
+                    <div class="news__date">
+                        <h5>14</h5>
+                        <span>Sep-2016</span>
+                    </div>
+                    <div class="news__content">
+                        <div class="news__content--title">
+                            <a href="#">Roasted salmon &amp; summer veg traybake</a>
+                        </div>
+                        <div class="news__content--breadcrumbs">
+                            <nav aria-label="You are here:" role="navigation">
+                                <ul class="breadcrumbs">
+                                    <li><a href="#">By Gamba Studio</a></li>
+                                    <li><a href="#">No comment</a></li>
+                                    <li><a href="#">restaurant</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <p>
+                        Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus id elit non mi porta gravida. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed contur.Cras mattis consectetur purus sit amet fermentum.…
+                        </p>
+                        <a href="#" class="button">Read more<i class="fa fa-arrow-right"></i></a>
+                        <div class="news__content--tags">
+                            <span>Tags:</span>
+                                <a href="#first">food</a>
+                                <a href="#second">healthy</a>
+                                <a href="#third">restaurant</a>
+                                <a href="#fourth">salmon</a>
+                        </div>
+                    </div>
+                
+                <!--Second - right wrapp-->
+                
+                    <div class="news__img"></div>
+                    <div class="news__menu--list">
+                        <ul class="news__menu" data-magellan>
+                            <li><a href="#">01</a></li>
+                            <li><a href="#">02</a></li>
+                            <li><a href="#">03</a></li>
+                            <li><a href="#">04</a></li>
+                        </ul>
+                    </div>
+                
+            </div><!--End News Wrapper-->
+    </section>
+    <!--End News Of The Day-->
+
+    <!--Book Your Table-->
+    <section class="book__table">
+        <div class="empty"></div>
+        <div class="book__wrapper">
+                <div class="book__title">
+                    <h2>Book your table</h2>
+                </div>    
+                <div class="book__form">
+                    <div class="form__wrapp">
+                        <div class="form__group">
+                            <div class="input__wrapper">
+                                <div class="input-icon-wrap">
+                                    <input type="text" class="input-with-icon" id="form-name" placeholder="Name">
+                                    <span class="input-icon"><span class="fa fa-user"></span></span>
+                                </div>  
+                            </div>
+                            <div class="input__wrapper">   
+                                <div class="input-icon-wrap">
+                                    <input type="text" class="input-with-icon" id="form-name" placeholder="Phone">
+                                    <span class="input-icon"><span class="fa fa-phone"></span></span>
+                                </div> 
+                            </div>        
+                        </div>
+                        <div class="form__group">
+                            <div class="input__wrapper">
+                                <div class="input-icon-wrap">
+                                    <input type="text" class="input-with-icon" id="form-name" placeholder="Email">
+                                    <span class="input-icon"><span class="fa fa-envelope"></span></span>
+                                </div>  
+                            </div>
+                            <div class="input__wrapper">   
+                                <div class="input-icon-wrap">
+                                    <input type="text" class="input-with-icon" id="form-name" placeholder="Number People">
+                                    <span class="input-icon"><span class="fas fa-users"></span></span>
+                                </div>    
+                            </div>        
+                        </div>
+                        <div class="form__group">
+                            <div class="input__wrapper">
+                                <div class="input-icon-wrap">
+                                    <input type="date" class="input-with-icon input-date" id="form-name" style="padding-right: 2rem; color: grey;">
+                                    <span class="input-icon"><span class="fas fa-calendar-alt"></span></span>
+                                </div>  
+                            </div>
+                            <div class="input__wrapper">   
+                                <div class="input-icon-wrap">
+                                    <select class="select__input">
+                                        <option value="husker">10:00</option>
+                                        <option value="starbuck">11:00</option>
+                                        <option value="hotdog">12:00</option>
+                                        <option value="apollo">13:00</option>
+                                    </select>
+                                     <span class="input-icon"><span class="fas fa-clock"></span></span>
+                                </div>   
+                            </div> 
+                        </div>
+                    </div>
+                </div><!--End Book Form-->
+                <div class="form__button">
+                    <a href="#" type="button">Resever now</a>
+                </div>
+            </div>
+        </section><!--End Book Your Table-->
+
+        <!--Upcoming Event-->
+        <section class="upcoming__section">
+            <div class="opening__hour">
+                <div class="opening__wrapper">
+                    <div class="opening__content">
+                        <div class="opening__title">
+                            <h3>Opening hour</h3>
+                        </div>
+                        <div class="opening__list">
+                            <div class="opening__list--li">
+                                <span class="list__days">Monday</span> 
+                                <span class="list__hours">9:00 - 22:00</span>
+                            </div>
+                            <div class="opening__list--li">
+                                <span class="list__days">Tuesday</span> 
+                                <span class="list__hours">9:00 - 22:00</span>
+                            </div>
+                            <div class="opening__list--li">
+                                <span class="list__days">Wednesday</span> 
+                                <span class="list__hours">9:00 - 22:00</span>
+                            </div>
+                            <div class="opening__list--li">
+                                <span class="list__days">Thursday</span> 
+                                <span class="list__hours">9:00 - 22:00</span>
+                            </div>
+                            <div class="opening__list--li">
+                                <span class="list__days">Friday</span> 
+                                <span class="list__hours">9:00 - 22:00</span>
+                            </div>
+                            <div class="opening__list--li">
+                                <span class="list__days">Saturday</span> 
+                                <span class="list__hours">9:00 - 22:00</span>
+                            </div>
+                            <div class="opening__list--li">
+                                <span class="list__days">Sunday</span> 
+                                <span class="list__hours">9:00 - 22:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="upcoming__content">
+                <div class="upcoming__title">
+                    <h2>Upcoming event</h2>
+                </div> 
+                <div class="upcoming__subtitle">
+                    <h3>Bring Sea On The Table</h3>
+                    <span>Tuesday 15/12/15, 6:00 am</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci di dunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="timing">
+                    <div class="boxes">
+                        <div class="timing__box">
+                            <div class="hours"><a>11</a></div>
+                        </div>
+                        <div class="timing__box">
+                            <div class="minutes"><a>2</a></div>
+                        </div>
+                        <div class="timing__box">
+                            <div class="seconds"><a>3</a></div> 
+                        </div>  
+                    </div>
+                    <div class="box__info">
+                        <div class="timing__box--info">Hours</div>
+                        <div class="timing__box--info">Minutes</div>
+                        <div class="timing__box--info">Seconds</div>
+                    </div>
+                    <div class="timing__button">
+                        <a href="#" type="button">Resever now</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!--End Upcoming Event-->
+
+        <!--Small red Banner-->
+        <section class="small__banner">
+            <div class="small__banner--text">
+                <h4>Check how all the dishes are cooked today!</h4>
+                <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet</p>
+            </div>
+            <div class="small__banner--form">
+                <form>
+                    <input type="text" placeholder="Type your Email">
+                    <a href="#" type="button">Get offer <i class="fas fa-arrow-right"></i></a>
+                    <hr>
+                </form>
+               
+            </div>
+        </section>
+        <!--End Small Red Banner-->
+
+        <!--Footer-->
+        <footer>
+                <div class="footer__first">
+                    <img src="img/gamba-2.png"/>
+                    <p>Ut enim ad minim veniam, quis nostrud cittion ullamco laboris nisi ut aliquip cosquat uis aute irure dolor ullamco nisi inkabris reprhenderit labore. cosquat uis aute irure dolor ullamco</p>
+                </div>
+                <div class="footer__second">
+                    <h4>Delivery Services</h4>
+                    <ul>
+                        <li style="order:0; flex:1;"><i class="fas fa-building"></i>Gamba Restaurant</li>
+                        <li style="order:1; flex:1;"><i class="fas fa-envelope"></i>support@gamba.com</li>
+                        <li style="order:2; flex:1;"><i class="fas fa-phone"></i>+84. 090 797 979</li>
+                        <li style="order:3; flex:1;"><i class="fas fa-map-marker-alt"></i>416 Ridge Road, Pratt, KS 67124</li>
+                    </ul>
+                </div>
+                <div class="footer__third">
+                    <h4>Open Time</h4>
+                    <ul>
+                        <li style="order:0; flex:1;">LUNCH SERVICE</li>
+                        <li style="order:1; flex:1;">Friday - Sunday: 11am - 1.30pm</li>
+                        <li style="order:2; flex:1;">DINNER SERVICE</li>
+                        <li style="order:3; flex:1;">Daily: Bookings Available 6am - 9.30pm</li>
+                    </ul>
+                </div>
+                <div class="footer__fourth">
+                    <h4>Instagram</h4>
+                    <div class="gallery">
+                        <ul>
+                            <li>
+                                <a target="_blank" href="img/1.jpg">
+                                    <img src="img/1.jpg" alt="" style="width:50px">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="img/2.jpg">
+                                    <img src="img/2.jpg" alt="" style="width:50px">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="img/3.jpg">
+                                    <img src="img/3.jpg" alt="" style="width:50px">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a target="_blank" href="img/4.jpg">
+                                    <img src="img/4.jpg" alt="" style="width:50px">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="img/5.jpg">
+                                    <img src="img/5.jpg" alt="" style="width:50px">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="img/6.jpg">
+                                    <img src="img/6.jpg" alt="" style="width:50px">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </footer>
+       
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+</body>
+</html>
