@@ -1299,7 +1299,7 @@ ul.breadcrumbs {
     
         .header__bottom {
             flex-wrap: wrap;
-            align-items: center;
+            justify-content: center;
             
             ul {
                 align-items: center;
@@ -1315,7 +1315,16 @@ ul.breadcrumbs {
                 }
             }
         }
-    
+        
+        .slider__section {
+            padding-top: 0;
+            text-align: center;
+
+            .slider {
+                padding-bottom: 0;
+            }
+        }
+
         .about__section {
             flex-direction: column;
     
@@ -1343,17 +1352,41 @@ ul.breadcrumbs {
         }
     
         .news__wrapp {
-            display: -webkit-box;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
         }
 
         .news__menu--list {
             display:none;
         }
 
+        .news__content--tags {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .news__day {
+            padding-top: 2rem;
+            padding-bottom: 0;
+        }
+
+        .breadcrumbs {
+            display: flex;
+            flex-direction: column;
+        }
+        
         .input-date {
             padding-left: 1.5rem;
         }
-    
+        
+        .red__banner {
+            padding-top: 0;
+            padding-bottom: 2rem;
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
         .book__table {
             flex-direction: column;
             
@@ -1387,7 +1420,11 @@ ul.breadcrumbs {
                 }
             }
         }
-    
+        footer {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
         .footer__second {
             li {
                 display: flex;
@@ -1485,15 +1522,34 @@ ul.breadcrumbs {
         }
     }
     .news__wrapp {
-        display:flex;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
 
         .news__menu--list {
             display: none;
         }
+
+        .news__content {
+            padding-left: 0;
+
+            .news__content--tags {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+       
     }
     footer {
-        display:none;
-    }
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 1rem;
+        }
     }
 
 
