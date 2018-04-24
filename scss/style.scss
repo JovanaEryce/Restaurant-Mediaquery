@@ -14,38 +14,13 @@ body {
 section {
     display: flex;  
 }
-
-header {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: stretch; 
-    width: 100%;
-    z-index: 1;
-    position: relative; 
-    overflow: hidden; 
+    .header__top {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid grey;
     }
 
-    .header__top {
-        order: 0;
-        flex: 0 1 auto;
-        align-self: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        align-items: flex-start;
-        //padding-left: 4rem;
-        //padding-right: 4rem;
-        }
-
     .header__top--list {
-        order: 0;
-        flex: 0 1 auto;
-        align-self: auto;
-
         ul {
             display: flex;
             flex-direction: row;
@@ -56,22 +31,14 @@ header {
             li {
                 list-style: none;
                 color: white;
-                //padding-right: 2rem;
+               //padding-right: 1rem;
             }
         }
     }
     
     .header__top--social {
-        order: 0;
-        flex: 0 1 auto;
-        align-self: auto;
-
         ul {
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-content: flex-start;
-            align-items: flex-start;
             padding-left: 0;
             li {
                 list-style: none;
@@ -81,21 +48,10 @@ header {
         }
     }
 
-    hr {
-        width: 100%;
-    }
     .header__bottom  {
-        order: 1;
-        flex: 0 1 auto;
-        align-self: auto;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-between;
-        align-content: flex-start;
-        //padding-left: 4rem;
-        //padding-right: 4rem;
-
+        
         ul {
             display: flex;
             flex-direction: row;
@@ -107,22 +63,12 @@ header {
                 list-style: none;
                 color: white;
                 //padding-right: 2rem;
-                margin-right: 1rem;
+               // margin-right: 1rem;
             }
         }
     }
-    
-    .header__bottom--brand {
-        order: 0;
-        flex: 0 1 auto;
-        align-self: auto;
-        }
-        
-    .header__bottom--menu {
-        order: 0;
-        flex: 0 1 auto;
-        align-self: auto;
 
+    .header__bottom--menu {
         ul {
             padding-left:0;
             li{
@@ -143,25 +89,16 @@ header {
     /*SLIDER*/
 
     .slider__section {
-        display: flex;
-        flex-direction: row;
         justify-content: center;
-        align-content: flex-start;
-        align-items: flex-start;
-        flex-wrap: wrap;
         padding-top: 5rem;
-        z-index: 1;
-        position: relative;
     }
 
     .slider {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-content: flex-start;
         align-items: center;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
 
         h1 {
             color: white;
@@ -176,12 +113,6 @@ header {
     }
 
     .slider__buttons {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
         a {
             color: white;
             text-decoration: none;
@@ -194,15 +125,12 @@ header {
             background: red;
             border: 1px solid red;
             box-sizing: border-box;
-            order: 0;
-            flex: 1;
             margin-right: 1rem;
         }
 
         a.white__button {
             border: 1px solid white;
             box-sizing: border-box;
-            order: 1;
             &:hover {
                 background: red;
                 border: 1px solid red;
@@ -214,28 +142,19 @@ header {
     /*About us*/
 
     .about__section {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: flex-start;
         z-index: 1;
         position: relative;
     }
   
     .about__img {
-        order: 0;
         flex: 1;
         background-image: url("../img/banner-1.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: scroll;
         background-position: center;
-
-        }
+    }
     
     .about__content {
-        order: 1;
         flex: 2;
         display: flex;
         flex-direction: column;
@@ -269,33 +188,18 @@ header {
     /*Special menu*/
 
     .special__section {
-        order: 0;
-        flex: 1;
-        background-color: transparent;
-        border-width: 0px;
-        border-style: solid solid solid solid;
-        border-radius: 0px;
+        flex-direction: column;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        z-index: 1;
+        position: relative;
         background-image: url(http://restaurant.gamba-themes.com/wp-content/uploads/2016/09/special-menu-1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
         background-position: center center;
     }
-    
-    .special__section {
-        display: flex;
-        flex-direction: column;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        z-index: 1;
-        position: relative;
-    }
 
-    .boxes {
-        display: flex;
-        flex-direction: column;
-    }
-    
     .special__title {
         padding-top: 2rem;
         h2 {
@@ -308,9 +212,7 @@ header {
 
     .menu__boxes {
         display: flex;
-        flex-direction: row;
         justify-content: space-evenly;
-        flex-wrap: wrap;
     
         .box {
             background: #fff;
@@ -324,10 +226,10 @@ header {
             padding: 2rem;
         }
 
-        .box__star:before {
+        .box__star::before {
             color: goldenrod;
             font-size: 1rem;
-            font-family: 'Font Awesome 5 Solid';
+            font-family: 'Font Awesome 5 Free';
             content: "\f005\f005\f005\f005\f005";
             position: relative;
             display: block;
@@ -366,14 +268,12 @@ header {
     }
     
     a.button {
-        background: #fff;
         border: 1px solid #000;
         color:#000;
         cursor: pointer;
         box-sizing: border-box;
         text-transform: uppercase;
         font-family: "Roboto", sans-serif;
-        width: 10rem;
         padding: 1rem;
         text-decoration: none;
     
@@ -391,29 +291,20 @@ header {
     /*Menu of the day*/
 
     .menu__section {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-content: flex-start;
-        flex-wrap: wrap;
         z-index: 1;
         position: relative;
     }
   
     .menu__img {
-        order: 0;
         flex: 1;
         background-image: url("../img/banner-3.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: scroll;
         background-position: center;
 
         }
     
     .menu__content {
-        order: 1;
         flex: 2;
         display: flex;
         flex-direction: column;
@@ -426,6 +317,7 @@ header {
             background: url("../img/kingcrab.png");
             background-repeat: no-repeat;
             background-position: center;
+            padding-bottom: 1rem;
 
             h2 {
                 text-transform: uppercase;
@@ -574,9 +466,7 @@ header {
     background-color: rgba(255, 0, 0, 0.9);
     padding-top: 5rem;
     padding-bottom: 5rem;
-    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     z-index: 1;
     position: relative;
     h2{
@@ -612,17 +502,12 @@ header {
 /* News of the day*/
 
 .news__day{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background-color: white;
-    position: relative;
-    z-index: 0;
     padding-bottom: 5rem;
     padding-top: 5rem;
     flex-wrap: wrap;
-    z-index: 1;
     position: relative;
+    z-index: 1;
 }
 
 .news__title {
@@ -641,27 +526,21 @@ header {
 
 .news__wrapp {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 5rem;
-    justify-content: baseline;
-    align-items: normal;
-    align-self: baseline;
+    padding: 3rem;
+    
+    .news__first--wrapp {
+        display:flex;
+        flex: 1;
+    }
+
+    .news__second--wrapp {
+        display: flex;
+        flex: 1;
+    }
 }
 
-.news__first {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: flex-start;
-}
 
 .news__date{
-    order: 0;
-    flex: 0 1 auto;
-    align-self: auto;
     border-top:  rgb(159, 167, 166) 1px solid;
     h5 {
         margin: 0;
@@ -671,14 +550,6 @@ header {
     }
 }
 
-.news__content {
-    order: 0;
-    flex: 3;
-    align-self: auto;
-}
-
-
-
 .news__content--title{
     a{
     text-transform: uppercase;
@@ -687,29 +558,17 @@ header {
     }
 }
 
-.news__second {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: flex-start;
-}
-
 .news__img{
-    order: 1;
     flex: 3;
     background-image: url(../img/news-6-580x500.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: scroll;
     background-position: center;
 }
 
 .news__content{
     padding-left: 2rem;
     flex: 3;
-    order: 1
     p{
         padding-right: 3rem;
     }
@@ -752,8 +611,6 @@ header {
 }
 
 .news__menu--list{
-    order: 3;
-    flex: 0 1 auto;
     li{
         list-style: none;
         a{
@@ -781,26 +638,13 @@ ul.breadcrumbs {
 /*Book your table*/
 
 .book__table {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-content: flex-start;
-    flex-wrap: wrap;
     z-index: 1;
     position: relative;
 }
 
 .empty {
-    order: 0;
     flex: 1;
-    background-color: transparent;
     border-width: 0px;
-    border-style: solid solid solid solid;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
     background-image: url(../img/banner-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -809,13 +653,9 @@ ul.breadcrumbs {
 }
 
 .book__wrapper {
-    order: 1;
     flex: 1;
     background: #000;
     padding-bottom: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .book__title {
@@ -825,7 +665,6 @@ ul.breadcrumbs {
     background-position: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    width: 100%;
 
     h2 {
         text-transform: uppercase;
@@ -833,40 +672,19 @@ ul.breadcrumbs {
         font-size: 2.5rem;
     }
 }
-
-.book__form {
-    display: flex;
-    flex-direction: column;
-}
-
-.form__wrapp {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
   .form__group {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
   }
   
   .input__wrapper {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
     padding-bottom: 1rem;   
   }
 
   .input-icon-wrap {
     border: 1px solid #ddd;    
     display: flex;
-    flex-direction: row;
-    order: 0;
-     flex: 0 1 auto;
-     align-self: auto;
   }
   
   .input-icon {
@@ -915,30 +733,22 @@ ul.breadcrumbs {
   /*Upcoming event*/
 
     .upcoming__section {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-content: flex-start;
         background: #fff;
         padding-top: 5rem;
-        flex-wrap: wrap;
+        padding-bottom: 5rem;
         z-index: 1;
         position: relative;
     }
 
     .opening__hour {
-        order: 0;
         flex: 1;
-        align-self: auto;
 
         .opening__wrapper {
             background: url("../img/coming-soon-1.jpg");
             background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: scroll;
             background-position: center;
-            padding: 2rem;
+            padding: 5rem;
 
             .opening__content {
                 border: 1px solid grey;
@@ -975,12 +785,9 @@ ul.breadcrumbs {
     }
 
     .upcoming__content {
-        order: 1;
         flex: 1;
-        align-self: auto;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
     }
 
     .upcoming__title {
@@ -1083,10 +890,8 @@ ul.breadcrumbs {
     /*Small red banner*/
 
     .small__banner {
-        display: flex;
         justify-content: space-between;
         background: red;
-        flex-wrap: wrap;
         z-index: 1;
         position: relative;
     }
@@ -1099,8 +904,6 @@ ul.breadcrumbs {
         }
     }
     .small__banner--form {
-        display: flex;
-        justify-content: space-between;
         padding-top: 5rem;
 
         input {
@@ -1117,38 +920,23 @@ ul.breadcrumbs {
 
     /*Footer*/
 
-    footer {
+    .footer__wrapp {
         background: #000;
-        padding-top: 5rem;
         display: flex;
-        justify-content: space-around;
         color: #fff;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-content: center;
         align-items: baseline;
         padding-bottom: 4rem;
-        flex-wrap: wrap;
-        z-index: 0;
+        padding-top: 3rem;
         position: fixed;
         bottom: 0;
-        left: 0;
     }
 
     .footer__first {
-        order: 0;
         flex: 1;
-        align-self: auto;
-        flex-wrap: wrap;
     }
 
     .footer__second {
-        order: 1;
         flex: 1;
-        align-self: auto;
-        flex-wrap: wrap;
-
         ul {
             list-style: none;
             padding: 0;
@@ -1162,11 +950,7 @@ ul.breadcrumbs {
     }
 
     .footer__third {
-        order: 2;
         flex: 1;
-        align-self: auto;
-        flex-wrap: wrap;
-
         ul {
             list-style: none;
             padding: 0;
@@ -1175,18 +959,13 @@ ul.breadcrumbs {
         }
     }
     .footer__fourth {
-        order: 3;
         flex: 1;
-        align-self: auto;
-        flex-wrap: wrap;
     }
 
     .gallery {
         ul {
             display: flex;
             list-style: none;
-            padding-left: 0;
-            flex-direction: row;
             justify-content: space-around;
         }
     }
@@ -1202,7 +981,7 @@ ul.breadcrumbs {
         }
 }*/
 
- @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+ /*@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
 
     .header__top  {
         flex-wrap: nowrap;
@@ -1375,7 +1154,7 @@ ul.breadcrumbs {
             display: flex;
             flex-direction: column;
         }
-        
+
         .input-date {
             padding-left: 1.5rem;
         }
@@ -1432,7 +1211,7 @@ ul.breadcrumbs {
             }
         }
         
-      }    
+      }    */
 
    @media (max-width: 400px) {
         .header__top  {
@@ -1480,10 +1259,19 @@ ul.breadcrumbs {
             border: 6px solid red;
         }
     }
-    .about__content {
-        padding-top: 3rem;
-        padding-bottom: 0;
+    .about__section {
+        flex-direction: column;
+
+        .about__img {
+            height: 15rem;
+        }
+
+        .about__content {
+            padding-top: 3rem;
+            padding-bottom: 0;
+        }
     }
+    
 
     .special__section {
         padding-top: 0;
@@ -1499,6 +1287,9 @@ ul.breadcrumbs {
             }
          }
     }
+    .menu__boxes {
+        display: block;
+    }
 
     .menu__content {
         padding-top: 2rem;
@@ -1507,6 +1298,18 @@ ul.breadcrumbs {
             h2 {
                 font-size: 2rem;
             }
+        }
+    }
+
+    .box__button {
+        display: flex;
+    }
+
+    .menu__section {
+        flex-direction: column;
+
+        .menu__img {
+            height: 15rem;
         }
     }
 
@@ -1521,16 +1324,18 @@ ul.breadcrumbs {
             font-size: .5rem;
         }
     }
+
+    .news__day {
+        padding-bottom: 0;
+    }
     .news__wrapp {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+        display: block;
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 2rem;
 
-        .news__menu--list {
-            display: none;
+        .news__first--wrapp {
+            display: block;
         }
 
         .news__content {
@@ -1540,17 +1345,52 @@ ul.breadcrumbs {
                 display: flex;
                 flex-direction: column;
             }
-        }
 
-       
-    }
-    footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 0 1rem;
+        p {
+            padding-right: 0;
+            text-align: justify;
+        }
         }
     }
+
+    .news__content--breadcrumbs {
+        ul {
+            display: -webkit-box;
+        }
+    }
+
+    .book__table {
+        flex-direction: column;
+
+        .empty {
+            height: 15rem;
+        }
+    }
+
+    .upcoming__section {
+        flex-direction: column;
+    }
+
+    .form__group {
+        display: grid;
+    }
+    
+    .small__banner {
+        flex-direction: column;
+
+        .small__banner--form {
+            form {
+                a {
+                    float: right;
+                }
+            }
+        }
+    }
+    .footer__wrapp {
+        flex-direction: column;
+    }
+    }
+
 
 
 

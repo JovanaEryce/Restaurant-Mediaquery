@@ -7,59 +7,64 @@
     <title>Restaurant Flexbox</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <div class="header__top">
-            <div class="header__top--list">
-                <ul>
-                    <li>79 District 1, HCM City, Vietnam</li>
-                    <li> (+84) 123 456 789</li>
-                    <li>07:30 am - 11:00 pm</li>
-                </ul>
-            </div>
-            <div class="header__top--social">
-                <ul>
-                        
-                    <li><i class="fab fa-facebook-f" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Facebook" title="Facebook"></i></li>
-                    <li><i class="fab fa-twitter" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Twitter" title="Twitter"></i></li>
-                    <li><i class="fab fa-pinterest-p" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Pinterest"></i></li>
-                    <li><i class="fab fa-youtube" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Youtube"></i></li>
-                    <li><i class="fab fa-instagram" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Instagram"></i></li>
-                  </ul>
-            </div>
-        </div>
-        <hr>
-        <div class="header__bottom">
-            <div class="header__bottom--brand">
-                <img src="img/gamba.png" alt="Gamba restaurant"/>
-            </div>
-            <div class="header__bottom--menu">
-                <ul>
-                    <li class="has-submenu is-active">
-                      <a href="#0">Home</a>
-                    </li>
-                    <li class="has-submenu">
-                      <a href="#0">Pages</a>
-                    </li>
-                    <li>
-                      <a href="#" class="a__content">Reservation</a>
-                    </li>
-                    <li>
-                      <a href="#">Menu</a>
-                    </li>
-                     <li>
-                      <a href="#">Shop</a>
-                    </li>
-                    <li>
-                      <a href="#">Blog</a>
-                    </li>
-                    <li><a href="#" class="a__content">Contact</a></li>
-                    <ul class="icon__shop" style="border-left:1px solid grey;">
-                        <li class="border__li" style="padding-left: .5rem;"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-search" aria-hidden="true"></i></li>
+        <div class="header__wrapp">
+            <div class="header__top">
+                <div class="header__top--list">
+                    <ul>
+                        <li>79 District 1, HCM City, Vietnam</li>
+                        <li> (+84) 123 456 789</li>
+                        <li>07:30 am - 11:00 pm</li>
                     </ul>
-                  </ul>
+                </div>
+                <div class="header__top--social">
+                    <ul>
+                        <li><i class="fab fa-facebook-f has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Facebook"></i></li>
+                        <li><i class="fab fa-twitter has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Twitter"></i></li>
+                        <li><i class="fab fa-pinterest-p has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Pinterest"></i></li>
+                        <li><i class="fab fa-youtube has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Youtube"></i></li>
+                        <li><i class="fab fa-instagram has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Instagram"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="header__bottom--brand">
+                    <img src="img/gamba.png" alt="Gamba restaurant"/>
+                </div>
+                <div class="header__bottom--menu">
+                    <ul>
+                        <li class="has-submenu is-active">
+                            <a href="#0">Home</a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#0">Pages</a>
+                        </li>
+                        <li>
+                            <a href="#" class="a__content">Reservation</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="a__content">Contact</a>
+                        </li>
+                        <li>
+                            <ul class="icon__shop" style="border-left:1px solid grey;">
+                                <li class="border__li" style="padding-left: .5rem;"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -69,8 +74,8 @@
            <p>The Seafood Restaurant has been voted by locals as "Best in the area" year after year.<br> We actively seek out the freshest in 
                 regional seafood and produce our restaurant.</p>
             <div class="slider__buttons">
-                <a href="#" type="button" class="red__button">Resever now</a>
-                <a href="#" type="button" class="white__button">Purchase now</a>
+                <a href="#"  class="red__button">Resever now</a>
+                <a href="#"  class="white__button">Purchase now</a>
             </div>   
        </div>
     </section>
@@ -108,18 +113,18 @@
                                     <h4>Crawfish Dishs</h4>
                                 </div>
                                 <div class="box__img">
-                                    <img src="img/crawfish.png">
+                                    <img src="img/crawfish.png" alt="crawfish">
                                 </div>
                                 <div class="box__star"></div>
                                 <div class="box__price">
-                                    <span style="display:flex;justify-content: center;">
+                                    <div style="display:flex;justify-content: center;">
                                         <h5>
                                             <sup>$</sup>58
                                         </h5>
-                                        <span class="per__kg">
+                                        <div class="per__kg">
                                             <h6>/ kg</h6>
-                                        </span>
-                                    </span>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="box__button">
                                     <a href="#" class="button">Full dishes</a>
@@ -132,18 +137,18 @@
                                     <h4>Crawfish Dishs</h4>
                                 </div>
                                 <div class="box__img">
-                                    <img src="img/kingcrab.png">
+                                    <img src="img/kingcrab.png" alt="kingcrab">
                                 </div>
                                 <div class="box__star"></div>
                                 <div class="box__price">
-                                    <span style="display:flex;justify-content: center;">
+                                    <div style="display:flex;justify-content: center;">
                                         <h5>
                                             <sup>$</sup>58
                                         </h5>
-                                        <span class="per__kg">
+                                        <div class="per__kg">
                                             <h6>/ kg</h6>
-                                        </span>
-                                    </span>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="box__button">
                                     <a href="#" class="button">Full dishes</a>
@@ -156,19 +161,18 @@
                                     <h4>Crawfish Dishs</h4>
                                 </div>
                                 <div class="box__img">
-                                    <img src="img/clamp.png">
+                                    <img src="img/clamp.png" alt="clamp">
                                 </div>
                                 <div class="box__star"></div>
                                 <div class="box__price">
-                                    <span style="display:flex;justify-content: center;">
+                                    <div style="display:flex;justify-content: center;">
                                         <h5>
-                                            <sup>$</sup>
-                                            58
+                                            <sup>$</sup>58
                                         </h5>
-                                        <span class="per__kg">
+                                        <div class="per__kg">
                                             <h6>/ kg</h6>
-                                        </span>
-                                    </span>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="box__button">
                                     <a href="#" class="button">Full dishes</a>
@@ -359,8 +363,8 @@
                 <h2>News of the day</h2>
             </div>
             <div class="news__wrapp">
-                <!--First- left wrap-->
-                
+            <!--First- left wrap-->           
+                <div class="news__first--wrapp">
                     <div class="news__date">
                         <h5>14</h5>
                         <span>Sep-2016</span>
@@ -377,22 +381,22 @@
                                     <li><a href="#">restaurant</a></li>
                                 </ul>
                             </nav>
-                        </div>
+                       </div>
                         <p>
                         Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus id elit non mi porta gravida. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed contur.Cras mattis consectetur purus sit amet fermentum.…
                         </p>
                         <a href="#" class="button">Read more<i class="fa fa-arrow-right"></i></a>
                         <div class="news__content--tags">
                             <span>Tags:</span>
-                                <a href="#first">food</a>
-                                <a href="#second">healthy</a>
-                                <a href="#third">restaurant</a>
-                                <a href="#fourth">salmon</a>
+                            <a href="#first">food</a>
+                            <a href="#second">healthy</a>
+                            <a href="#third">restaurant</a>
+                            <a href="#fourth">salmon</a>
                         </div>
                     </div>
-                
+                </div><!--End-First-left-wrapp-->
                 <!--Second - right wrapp-->
-                
+                <div class="news__second--wrapp">
                     <div class="news__img"></div>
                     <div class="news__menu--list">
                         <ul class="news__menu" data-magellan>
@@ -402,10 +406,9 @@
                             <li><a href="#">04</a></li>
                         </ul>
                     </div>
-                
+                </div><!--End-Second-right-wrapp-->
             </div><!--End News Wrapper-->
-    </section>
-    <!--End News Of The Day-->
+        </section> <!--End News Of The Day-->
 
     <!--Book Your Table-->
     <section class="book__table">
@@ -425,7 +428,7 @@
                             </div>
                             <div class="input__wrapper">   
                                 <div class="input-icon-wrap">
-                                    <input type="text" class="input-with-icon" id="form-name" placeholder="Phone">
+                                    <input type="text" class="input-with-icon" id="form-phone" placeholder="Phone">
                                     <span class="input-icon"><span class="fa fa-phone"></span></span>
                                 </div> 
                             </div>        
@@ -433,13 +436,13 @@
                         <div class="form__group">
                             <div class="input__wrapper">
                                 <div class="input-icon-wrap">
-                                    <input type="text" class="input-with-icon" id="form-name" placeholder="Email">
+                                    <input type="text" class="input-with-icon" id="form-email" placeholder="Email">
                                     <span class="input-icon"><span class="fa fa-envelope"></span></span>
                                 </div>  
                             </div>
                             <div class="input__wrapper">   
                                 <div class="input-icon-wrap">
-                                    <input type="text" class="input-with-icon" id="form-name" placeholder="Number People">
+                                    <input type="text" class="input-with-icon" id="form-people" placeholder="Number People">
                                     <span class="input-icon"><span class="fas fa-users"></span></span>
                                 </div>    
                             </div>        
@@ -447,7 +450,7 @@
                         <div class="form__group">
                             <div class="input__wrapper">
                                 <div class="input-icon-wrap">
-                                    <input type="date" class="input-with-icon input-date" id="form-name" style="padding-right: 2.5rem; color: grey;">
+                                    <input type="date" id="input-date" class="input-with-icon input-date" style="padding-right: 2.5rem; color: grey;">
                                     <span class="input-icon"><span class="fas fa-calendar-alt"></span></span>
                                 </div>  
                             </div>
@@ -466,7 +469,7 @@
                     </div>
                 </div><!--End Book Form-->
                 <div class="form__button">
-                    <a href="#" type="button">Resever now</a>
+                    <a href="#">Resever now</a>
                 </div>
             </div>
         </section><!--End Book Your Table-->
@@ -539,7 +542,7 @@
                         <div class="timing__box--info">Seconds</div>
                     </div>
                     <div class="timing__button">
-                        <a href="#" type="button">Resever now</a>
+                        <a href="#">Resever now</a>
                     </div>
                 </div>
                 
@@ -556,7 +559,7 @@
             <div class="small__banner--form">
                 <form>
                     <input type="text" placeholder="Type your Email">
-                    <a href="#" type="button">Get offer <i class="fas fa-arrow-right"></i></a>
+                    <a href="#">Get offer <i class="fas fa-arrow-right"></i></a>
                     <hr>
                 </form>
                
@@ -566,69 +569,70 @@
 
         <!--Footer-->
         <footer>
+            <div class="footer__wrapp">
                 <div class="footer__first">
-                    <img src="img/gamba-2.png"/>
-                    <p>Ut enim ad minim veniam, quis nostrud cittion ullamco laboris nisi ut aliquip cosquat uis aute irure dolor ullamco nisi inkabris reprhenderit labore. cosquat uis aute irure dolor ullamco</p>
-                </div>
-                <div class="footer__second">
-                    <h4>Delivery Services</h4>
-                    <ul>
-                        <li style="order:0; flex:1;"><i class="fas fa-building"></i>Gamba Restaurant</li>
-                        <li style="order:1; flex:1;"><i class="fas fa-envelope"></i>support@gamba.com</li>
-                        <li style="order:2; flex:1;"><i class="fas fa-phone"></i>+84. 090 797 979</li>
-                        <li style="order:3; flex:1;"><i class="fas fa-map-marker-alt"></i>416 Ridge Road, Pratt, KS 67124</li>
-                    </ul>
-                </div>
-                <div class="footer__third">
-                    <h4>Open Time</h4>
-                    <ul>
-                        <li style="order:0; flex:1;">LUNCH SERVICE</li>
-                        <li style="order:1; flex:1;">Friday - Sunday: 11am - 1.30pm</li>
-                        <li style="order:2; flex:1;">DINNER SERVICE</li>
-                        <li style="order:3; flex:1;">Daily: Bookings Available 6am - 9.30pm</li>
-                    </ul>
-                </div>
-                <div class="footer__fourth">
-                    <h4>Instagram</h4>
-                    <div class="gallery">
-                        <ul>
-                            <li>
-                                <a target="_blank" href="img/1.jpg">
-                                    <img src="img/1.jpg" alt="" style="width:50px">
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="img/2.jpg">
-                                    <img src="img/2.jpg" alt="" style="width:50px">
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="img/3.jpg">
-                                    <img src="img/3.jpg" alt="" style="width:50px">
-                                </a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a target="_blank" href="img/4.jpg">
-                                    <img src="img/4.jpg" alt="" style="width:50px">
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="img/5.jpg">
-                                    <img src="img/5.jpg" alt="" style="width:50px">
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="img/6.jpg">
-                                    <img src="img/6.jpg" alt="" style="width:50px">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                            <img src="img/gamba-2.png" alt="gamba-2">
+                            <p>Ut enim ad minim veniam, quis nostrud cittion ullamco laboris nisi ut aliquip cosquat uis aute irure dolor ullamco nisi inkabris reprhenderit labore. cosquat uis aute irure dolor ullamco</p>
+                        </div>
+                        <div class="footer__second">
+                            <h4>Delivery Services</h4>
+                            <ul>
+                                <li style="order:0; flex:1;"><i class="fas fa-building"></i>Gamba Restaurant</li>
+                                <li style="order:1; flex:1;"><i class="fas fa-envelope"></i>support@gamba.com</li>
+                                <li style="order:2; flex:1;"><i class="fas fa-phone"></i>+84. 090 797 979</li>
+                                <li style="order:3; flex:1;"><i class="fas fa-map-marker-alt"></i>416 Ridge Road, Pratt, KS 67124</li>
+                            </ul>
+                        </div>
+                        <div class="footer__third">
+                            <h4>Open Time</h4>
+                            <ul>
+                                <li style="order:0; flex:1;">LUNCH SERVICE</li>
+                                <li style="order:1; flex:1;">Friday - Sunday: 11am - 1.30pm</li>
+                                <li style="order:2; flex:1;">DINNER SERVICE</li>
+                                <li style="order:3; flex:1;">Daily: Bookings Available 6am - 9.30pm</li>
+                            </ul>
+                        </div>
+                        <div class="footer__fourth">
+                            <h4>Instagram</h4>
+                            <div class="gallery">
+                                <ul>
+                                    <li>
+                                        <a target="_blank" href="img/1.jpg">
+                                            <img src="img/1.jpg" alt="" style="width:50px">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="img/2.jpg">
+                                            <img src="img/2.jpg" alt="" style="width:50px">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="img/3.jpg">
+                                            <img src="img/3.jpg" alt="" style="width:50px">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a target="_blank" href="img/4.jpg">
+                                            <img src="img/4.jpg" alt="" style="width:50px">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="img/5.jpg">
+                                            <img src="img/5.jpg" alt="" style="width:50px">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="img/6.jpg">
+                                            <img src="img/6.jpg" alt="" style="width:50px">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+            </div>     
         </footer>
-       
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 </body>
 </html>
